@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>Belajar Reactjs</title>
+  <title>Basic ReactJs</title>
   <script src="./react_script/react.production.min.js"></script>
   <script src="./react_script/react-dom.production.min.js"></script>
   <script src="./react_script/babel.min.js"></script>
@@ -11,6 +11,12 @@
 
 <body>
   <div id="app"></div>
-  <script type="text/babel" src="./element/element1.js"></script>
+  <script type="text/babel">
+    function Hello() {
+      return <h1>Hello there!</h1>;
+    }
+
+    ReactDOM.render(<Hello/>, document.getElementById("app"));
+  </script>
 </body>
 </html>
