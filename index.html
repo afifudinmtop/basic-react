@@ -11,12 +11,18 @@
 
 <body>
   <div id="app"></div>
+  <script type="text/babel" src="./tes.js"></script>
   <script type="text/babel">
     function Hello() {
-      return <h1>Hello there!</h1>;
+      return (
+        <Hello2/>
+      )
     }
 
-    ReactDOM.render(<Hello/>, document.getElementById("app"));
+    function tes() {
+      ReactDOM.render(<Hello/>, document.getElementById("app"));
+    }
+    tes();
   </script>
 </body>
 </html>
